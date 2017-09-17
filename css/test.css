@@ -1,0 +1,16 @@
+.page {
+  width: 450px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.output {
+  color: blue;
+  width: 400px;
+  display: inline-block;
+}
+
+span.output{
+  width: auto;
+}
