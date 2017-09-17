@@ -28,8 +28,8 @@
       document.write(string);
     }
 
-    var expectationNote = function(a, b) {
-      return "<span class='monkey-expect'>- expected \"" + a + "\"<br />- to equal \"" + b + "\"</span>";
+    var expectationNote = function(a, b, expectation) {
+      return "<span class='monkey-expect'>- expected \"" + a + "\"<br />- to " + expectation + " \"" + b + "\"</span>";
     }
 
   exports.testOutput = {
