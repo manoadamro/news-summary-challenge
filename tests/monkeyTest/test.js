@@ -1,6 +1,10 @@
 (function(exports){
 
-  var monkeyTest = function(title) {
+  var defineTest = function(title) {
+    document.write("<br /><span class='monkey-define'>" + title + "</span><br />");
+  }
+
+  var test = function(title) {
 
     var assert = function (objA) {
 
@@ -33,18 +37,14 @@
     }
   }
 
-  var monkeyDefine = function(title) {
-    document.write("<br /><span class='monkey-define'>" + title + "</span><br />");
-  }
-
   var runTestSet = function(tests) {
     for (var key in tests){
       tests[key](key.replace(/_/g, ' '))
     }
   }
 
-  exports.monkeyDefine = monkeyDefine;
-  exports.monkeyTest = monkeyTest;
+  exports.defineTest = defineTest;
+  exports.test = test;
   exports.runTestSet = runTestSet
 
 })(this);
